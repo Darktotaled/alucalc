@@ -30,7 +30,7 @@ function calc() {
 }
 
 function show_calc() {
-
+  alert(calc())
   console.log(calc())
   document.getElementById('resul').innerHTML = calc()
 
