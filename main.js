@@ -1,3 +1,8 @@
+function prevention(event) {
+  event.preventDefault();
+}
+const listagem = document.getElementById('minhalista');
+listagem.addEventListener('submit', prevention);
 function calc() {
   let y1 = parseFloat(document.getElementById('opt1').value)
   let y2 = parseFloat(document.getElementById('opt2').value)
@@ -23,7 +28,10 @@ function calc() {
   toString(z)
   return 'R$' + z
 }
+
 function show_calc() {
-  alert(calc())
+
   console.log(calc())
+  document.getElementById('resul').innerHTML = calc()
+
 }

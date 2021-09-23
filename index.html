@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Alumínio</title>
-  <script src="/main.js"></script>
+  
 </head>
 <body>
-  <form name="lista" onsubmit='show_calc()'>
+  <form name="lista" id='minhalista' onsubmit=show_calc()>
     <label for="preco">Preço do alumínio por quilo</label><br>
     <input type='number' name='preco'><br><br>
     <select name = "dropdown1"id="opt1">
@@ -792,7 +792,9 @@
     </select>
     <label for="qt1">Metros</label>
     <input type="number" name='qt9'value='0'><br><br>
-    <input type="submit"value='Calcular'>
- </form>
+    <input class='submit'name='calculo'type="submit"value='Calcular'>
+   </form>
+   <h1 id='resul'></h1>
 </body>
+<script src="/main.js"></script>
 </html>
